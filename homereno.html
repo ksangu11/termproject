@@ -21,26 +21,9 @@
         <title>Kristin Tobin | Home Reno</title>
     </head>
     <body>
-            <div id="wrapper">
+        <div id="wrapper">
         <!--Header-->    
-            <header>
-                <nav>
-                    <div class="logo">
-                        <a href="index.html"><img id="logo" src="img/logo4.png" alt="logo" width="300" ></a>
-                    </div>
-                    <ul class="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="homereno.html">Home Reno</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>           
-                    <button class="burger-menu" id="burger-menu">
-                        <ion-icon class="bars" name="menu-outline"></ion-icon>
-                    </button>
-                </nav>
-            </header>
+        <header-component></header-component>  
         <!--Main Content-->
         <main>
             <div id="home_reno">
@@ -113,18 +96,28 @@
                     </table> 
                 </div>      
             </div>
-            <div id="before_after" class="feature"> 
-                <h3 class="centered">Before/After</h3>
-                <img class="image_off centered" src ="img/hallbathbefore.jpg" alt= "before">
-                <img class="image_on centered" src ="img/hallbathafter.jpg" alt= "after">
+            <div class="container">
+                <div class="main-img">
+                    <img src="img/img1.jpg" id="current">
+                </div>
+                <div class="imgs">
+                    <img src="img/img1.jpg" id="current">
+                    <img src="img/img2.jpg" id="current">
+                    <img src="img/img3.jpg" id="current">
+                    <img src="img/img4.jpg" id="current">
+                    <img src="img/img5.jpg" id="current">
+                    <img src="img/img6.jpg" id="current">
+                  
+                </div>
             </div>
         </main> 
-        <!--Footer-->
-            <footer class="footer">
-                <p>&copy; Copyright 2021 <a href="mailto:ktobin1@bu.edu">Kristin Tobin</a></p>
-            </footer>    
+        <div class="push"></div>
         </div>
+        <!--Footer-->
+        <footer-component></footer-component>
         <!--Site Scripts-->
-        <script defer src="js/index.js"></script>     
+        <script defer src="js/index.js"></script> 
+        <script src ="components/header.js"></script>
+        <script src ="components/footer.js"></script>    
     </body>
 </html>

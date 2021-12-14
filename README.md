@@ -11,16 +11,16 @@
 ## Deliverable
 - [x] 5-10 pages
 - [x] GitHub storage
-- [] Hosted on Netlify
+- [x] Hosted on Netlify
 
 
 ## Extra Credit
-- [] ES6 functionality
-- [] Connecting to a database or external API
-- [] Make site responsive using CSS Flexbos or CSS Grid Layout
+- [x] ES6 functionality use of arrow functions
+- [x] Make site responsive using CSS Flexbos or CSS Grid Layout
 
 - [x] Favicon
-- [] Appropriate use of HTML5, CSS3, JavaScript
+- [x] Appropriate use of HTML5, CSS3, JavaScript
 - [] Included Vue app
-- [] Weather API call
+- [] API call
 - [] JSON use
+- [x] Header & Footer components
