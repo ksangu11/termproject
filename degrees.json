@@ -1,0 +1,24 @@
+{
+    "degrees": [{
+        "school": "Dutchess Community College",
+        "major" : "Commercial Art",
+        "type" : "A.A.S",
+        "yearConf": "2012",
+        "gpa" : 2.9
+    },
+    {
+        "school": "Southern New Hampshire University",
+        "major" : "Information Technology",
+        "type" : "B.S",
+        "yearConf": "2019",
+        "gpa" : 3.48
+    },
+    {
+        "school": "Boston University",
+        "major" : "Computer Information Systems",
+        "type" : "M.S",
+        "yearConf": "2022",
+        "gpa" : 3.25
+    }
+]
+}

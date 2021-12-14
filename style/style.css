@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700;900&display=swap');
+
+/* Sitewide Variables*/
+:root{
+--font-family: "Cabin", sans-serif;
+--heading-family: "Roboto Condensed", sans-serif;
+--normal-font: 400;
+--bold-font: 700;
+--bolder-font: 900;
+--bg-color: #fdfdfd;
+--element-color: #133d3e;
+--accent-color: #39abad;
+--secondary-accent-color: rgb(4, 31, 49);
+--primary-shadow: #252525;
+--secondary-shadow: #545555;
+--tertiary-shadow: #cbcccb;
+--font-color: #2b2b2b;
+--alt-font-color: #f5f5f5;
+--bottom-margin: 0.5rem;
+--bottom-margin-2: 1rem;
+--line-height: 1.7rem;
+--transition: 0.3s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+#wrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--element-color);
+}
+a:hover{
+    color: var(--accent-color);
+}
+a :visited{
+    color: purple;
+}
+.responsive{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+/*General Styles - Lists, Buttons, Responsive Images, Features, Grid, */
+h1{
+    font-family: var(--heading-family);
+}
+h3{
+    font-family: var(--heading-family);
+}
+ul{
+    padding-left: 0;
+    margin: 0;
+}
+.button{
+    padding: 10px;
+    background-color:var(--secondary-accent-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--primary-shadow);
+    font-size: 16px;
+    font-weight: 700 ;
+    color: var(--alt-font-color);
+    display: inline-flex;
+}
+a.button{
+    color: var(--alt-font-color);
+
+}
+.button:active{
+    transform: scale(0.90);
+}
+.feature{
+    background-color: var(--accent-color);
+    background: linear-gradient(180deg, var(--font-color) 0%, var(--element-color) 35%, var(--accent-color) 100%);
+    padding: 4rem;
+    color: var(--alt-font-color);
+}
+.feature h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+}
+.feature_button{
+    padding: 10px;
+    background-color: var(--element-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 5px 5px var(--primary-shadow);
+    font-size: 16px;
+    font-weight: 700 ;
+    color: var(--alt-font-color);
+ 
+
+}
+.feature h3{
+    font-family: var(--heading-family) ;
+    font-size: 1.5rem;
+}
+.feature a{
+    color: var(--bg-color);
+}
+.feature a:hover{
+    color: var(--tertiary-shadow);
+}
+.column{
+    float: left;
+    width: 33%;
+    padding: 2rem;
+}
+div.column{
+    text-align: center;
+    align-items: center;
+}
+div.column p{
+    margin-bottom: 2rem;
+}
+.row:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+table, th, td{
+    border: 1px solid gray;
+}
+.centered{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+}
+.renotext{
+    margin-top: 1.5rem;
+    margin-bottom:1.5rem;
+}
+.image_off, #hover:focus .image_on{
+    display:none;
+}
+.image_on, #hover:focus .image_off{
+    display:block;
+}
+/* Header and Main Navigation - Logo & Navbar*/
+#logo{
+    padding: 5px;
+    background-color: var(--main-background-color);
+    margin: 0 auto;
+    min-width: 200px;
+}
+div #logo{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav h1 {
+    color: var(--element-color);
+  }
+  
+nav a {
+    color: var(--element-color);
+    transition: var(--transition);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+nav a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+nav ul li {
+    font-weight: var(--bold-font);
+  }
+#contact{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Hero content*/
+.hire_me{
+display:inline-flex;
+margin: 5px;
+}
+.hero{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    display: flex;
+    max-width: 68.75rem;
+    padding: 1.5rem;
+}
+.hero__img{
+    width: 37.5rem;
+    margin: 1rem;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    
+}
+.bio{
+    padding: 1rem;
+    margin: auto;
+}
+.content{
+    margin: 2rem;
+    padding: 2rem;
+}
+.about h1{
+    margin-bottom: 1.5rem;;
+}
+#aboutus{
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+#social_icons{
+    text-align: center;
+}
+#social_icons object{
+    margin: 1rem;
+    display: inline-block;
+}
+#social_icons object:hover{
+    cursor: pointer;
+}
+.social{
+    transform: scale(0.90);
+}
+/*Footer*/
+footer{
+    background-color: var(--element-color);
+    color: var(--alt-font-color);
+    text-align: center;
+}
+footer a{
+    color: var(--accent-color);
+}
+.footer{
+    flex-shrink: 0;
+    padding: 20px;
+    
+}
+/*Form styling*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid gray; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  #contact_form{
+    margin-bottom: 3rem;
+}
+/*Media queries*/
+
+/* For large screens greater than 1201px */
+/*@media screen and (min-width: 1201px){
+
+    .logo{
+        display: flex;
+        margin: auto;
+        float: none;
+    }
+    ul.nav__list{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        float: none;
+    }
+}
+/* On screens that are 1200px or less change nav color*/
+/*@media screen and (max-width: 1200px){
+    .logo{
+        display: flex;
+        margin: auto;
+        float: none;
+    }
+    ul.nav__list{
+        margin: auto;
+        max-width: 100%;
+        float: none;
+        background-color: lightseagreen;
+    }
+}
+/* On screens that are 768px wide or less, make the menu links stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 768px) {
+    div.logo{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    ul.nav__list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+}
+/* On screens that are 360px wide or less, make the menu links stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 360px) {
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    ul.nav__list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+} 
