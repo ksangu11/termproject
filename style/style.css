@@ -70,6 +70,9 @@ h1{
 h3{
     font-family: var(--heading-family);
 }
+.hobby h4{
+    margin: 1rem;
+}
 ul{
     padding-left: 0;
     margin: 0;
@@ -264,6 +267,10 @@ margin: 5px;
 .social{
     transform: scale(0.90);
 }
+.hobby{
+    margin: 1rem;
+}
+
 /*Photo Gallery*/
 .container{
     max-width: 760px;
