@@ -78,7 +78,7 @@ function getData() {
            
          });
        
-         document.getElementById('degree_data').appendChild(table);
+         document.body.appendChild(table);
        });
  };
 //Photo Gallery 
