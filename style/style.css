@@ -42,7 +42,7 @@ body{
     height: auto !important;
     height: 100%;
     width: 100%;
-    margin: 0 auto -142;
+    margin: 0 auto -142px;
 }
 
 ul{
@@ -100,7 +100,7 @@ a.button{
     background: linear-gradient(180deg, var(--font-color) 0%, var(--element-color) 35%, var(--accent-color) 100%);
     padding: 4rem;
     color: var(--alt-font-color);
-    margin: 1rem 0 1 rem 0;
+    margin: 1rem 0 1rem 0;
 
 }
 .feature h1{
@@ -207,7 +207,6 @@ img.hero__image.responsive{
 }
 .resume {
     margin: 1rem;
-    display: inline-flexbox;
     max-width: 40%;
     width: 37.5rem;
 }
