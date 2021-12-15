@@ -20,7 +20,5 @@
 
 - [x] Favicon
 - [x] Appropriate use of HTML5, CSS3, JavaScript
-- [] Included Vue app
-- [] API call
-- [] JSON use
-- [x] Header & Footer components
+- [x] Header & Footer JS components
+- [x] JS Photo Gallery

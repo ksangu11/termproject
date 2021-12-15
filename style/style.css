@@ -105,6 +105,10 @@ a.button{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2rem;
 }
+div.grid-child-left,
+div.grid-child-right{
+    text-align: justify;
+}
 .feature_button{
     padding: 10px;
     background-color: var(--element-color);
@@ -274,6 +278,9 @@ margin: 5px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 5px;
+}
+.dog{
+    margin-top: 1rem;
 }
 @keyframes fadeIn {
     to {
