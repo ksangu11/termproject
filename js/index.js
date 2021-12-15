@@ -78,7 +78,7 @@ function getData() {
            
          });
        
-         document.body.appendChild(table);
+         document.main.appendChild(table);
        });
  };
 //Photo Gallery 
