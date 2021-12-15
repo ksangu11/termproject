@@ -21,4 +21,5 @@
 - [x] Favicon
 - [x] Appropriate use of HTML5, CSS3, JavaScript
 - [x] Header & Footer JS components
+- [x] Fetch JSON data
 - [x] JS Photo Gallery
